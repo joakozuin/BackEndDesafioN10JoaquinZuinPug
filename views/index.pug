@@ -1,0 +1,44 @@
+extends layout
+
+block layout-content
+   div(class="mui-container-fluid")
+      div(class="mui--text-display1" class="mui--text-center" style="height:50px;margin-top:20px") #{titulo}
+      div(class="mui-divider")
+      div(class="mui-row")
+        div(class="mui-col-md-4")
+        div(class="mui-col-md-4") 
+          h2(class="mui--text-center") Cantidad de productos en el listado: #{cantidad}
+          table(class="mui-table mui-table--bordered mui-striped")
+            thead
+              tr
+                th Descripción
+                th Precio
+                th Imagen
+
+            tbody
+             if produHay
+              each val in produ
+                tr
+                td #{val.titulo}
+                td #{val.precio}
+                td(class="mui--text-center")
+                  img(src=val.thumbnail width=30 height=30 alt="coder") 
+          if produHay
+          else
+           h2 Disculpe, no hay productos 
+
+        div(class="mui-col-md-4")
+        
+      <!-- Botón para pasar a otra Pagina -->
+      div(class="mui-row")
+         div( class="mui-col-md-4")
+         div(class="mui-col-md-4")
+         div(class="mui-col-md-4")
+           form(action="http://localhost:8080/")
+            div(class="mui--text-center")
+              button(class=" mui-btn mui-btn--raised mui-btn--accent" type="submit") Formulario Carga Productos
+          
+
+
+       
+  

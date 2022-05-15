@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link href="//cdn.muicss.com/mui-0.10.3/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="//cdn.muicss.com/mui-0.10.3/js/mui.min.js"></script> -->
+    <link href="./css/mui.min.css" rel="stylesheet" type="text/css" />
+    <link href="./css/estilos.css" rel="stylesheet" type="text/css" />
+    <script src="./js/mui.min.js"></script>
+  </head>
+  <body class="contenedor">
+
+    <div class="mui-container-fluid ">
+      <div class="mui--text-display1  mui--text-center" style="height:50px;margin-top:20px">Motor Handlebard</div>
+      <div class="mui-divider"></div>
+      <!-- Listado de Productos -->
+      <div class="mui-row" style="margin-top:20px">
+        <div class="mui-col-md-4"></div>
+        <div class="mui-col-md-4">
+         <h2 class="mui--text-center">Listado de  Productos</h2>
+          <table class="mui-table mui-table--bordered mui-striped">
+            <thead>
+              <tr>
+                <th>Descripción</th>
+                <th>Precio</th>
+                <th>Imagen</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Cell 1-1</td>
+                <td>Cell 1-2</td>
+                <td class="mui--text-center" ><img src="https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-128.png" width=30 height=30 alt="coder"></td>
+              </tr>
+              <tr>
+                <td>Cell 2-1</td>
+                <td>Cell 2-2</td>
+                <td class="mui--text-center" ><img src="https://cdn3.iconfinder.com/data/icons/education-209/64/pencil-pen-stationery-school-128.png" width=30 height=30 alt="coder"></td>
+              </tr>
+              <tr>
+                <td>Cell 3-1</td>
+                <td>Cell 3-2</td>
+                <td class="mui--text-center" ><img src="https://cdn3.iconfinder.com/data/icons/education-209/64/calculator-math-tool-school-128.png" width=30 height=30 alt="coder"></td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+
+        <div class="mui-col-md-4"></div>
+      </div>
+       <!-- Botón para pasar a otra Pagina -->
+       <div class="mui-row">
+        <div class="mui-col-md-4"></div>
+        <div class="mui-col-md-4">
+
+        </div>
+
+         <form class="mui-form" method="POST" action="/api/productos/form">
+            <div class="mui--text-center">
+              <button type="submit" class=" mui-btn mui-btn--raised mui-btn--accent"> Formulario Carga Productos</button>
+           </div>
+          </form>
+        </div>
+      </div>
+
+      
+    
+
+
+
+    </div>
+
+
+    
+
+  </body>
+</html>

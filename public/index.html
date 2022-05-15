@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link href="//cdn.muicss.com/mui-0.10.3/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="//cdn.muicss.com/mui-0.10.3/js/mui.min.js"></script> -->
+    <link href="./css/mui.min.css" rel="stylesheet" type="text/css" />
+    <link href="./css/estilos.css" rel="stylesheet" type="text/css" />
+    <script src="./js/mui.min.js"></script>
+  </head>
+  <body class="contenedor">
+
+    <div class="mui-container-fluid ">
+      <div class="mui--text-display1  mui--text-center" style="height:50px;margin-top:20px">Formulario Productos</div>
+      <div class="mui-divider"></div>
+      <!-- Formulario -->
+      <div class="mui-row" style="margin-top:20px">
+        <div class="mui-col-md-4"></div>
+        <div class="mui-col-md-4">
+
+          <form class="mui-form" method="POST" action="/api/productos/form">
+           <!--  <legend class="mui--text-center">Formulario Producto</legend> -->
+            <div class="mui-textfield">
+              <input type="text" placeholder="Descripción" name="titulo">
+            </div>
+            <div class="mui-textfield">
+              <input type="text" placeholder="Precio" name="precio">
+            </div>
+            <div class="mui-textfield">
+              <input type="text" placeholder="URL imagen" name="thumbnail">
+            </div>
+            <div class="mui--text-center">
+              <button type="submit" class=" mui-btn mui-btn--raised mui-btn--primary"> Agregar Producto</button>
+            </div>
+          </form>
+
+        </div>
+
+        <div class="mui-col-md-4"></div>
+      </div>
+      <div class="mui-divider"></div>
+
+
+      <!-- Botón para pasar a otra Pagina -->
+      <div class="mui-row">
+        <div class="mui-col-md-4"></div>
+        <div class="mui-col-md-4"> </div>
+
+       <div class="mui-col-md-4">
+         <form action="http://localhost:8080/api/productos/motorPug">
+           <div class="mui--text-center">
+              <button type="submit" class=" mui-btn mui-btn--raised mui-btn--accent"> Listar Productos Con Motor Pug</button>
+            </div>
+          </form>
+       </div>
+      </div>
+
+    </div>
+
+
+
+
+  </body>
+</html>

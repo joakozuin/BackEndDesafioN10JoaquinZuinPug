@@ -1,0 +1,62 @@
+
+   {{!main.hbs}}
+
+    <div class="mui-container-fluid ">
+      <div class="mui--text-display1  mui--text-center" style="height:50px;margin-top:20px">{{this.titulo}}</div>
+      <div class="mui-divider"></div>
+      <!-- Listado de Productos -->
+      <div class="mui-row" style="margin-top:20px">
+        <div class="mui-col-md-4"></div>
+        <div class="mui-col-md-4">
+         <h2 class="mui--text-center">Cantidad de producto en el listado:{{prod.length}}</h2>
+          <table class="mui-table mui-table--bordered mui-striped">
+            <thead>
+              <tr>
+                <th>Descripción</th>
+                <th>Precio</th>
+                <th>Imagen</th>
+              </tr>
+            </thead>
+            <tbody>
+             {{#if prodHay}}
+              {{# each prod}}
+                <tr>
+                <td>{{titulo}} </td>
+                <td>{{precio}} </td>
+                <td class="mui--text-center"><img src={{thumbnail}} width=30 height=30 alt="coder"> </td>
+               </tr>
+               {{/each}}
+              {{else}}
+              {{/if}}
+        
+            </tbody>
+
+          </table>
+          {{#if prodHay}}
+           {{else}}
+               <h2> Disculpe, no hay productos</h2>
+          {{/if}}
+         
+        </div>
+
+        <div class="mui-col-md-4"></div>
+      </div>
+      
+       <!-- Botón para pasar a otra Pagina -->
+       <div class="mui-row">
+         <div class="mui-col-md-4"></div>
+         <div class="mui-col-md-4">
+
+         </div>
+          <form action="http://localhost:8080/">
+            <div class="mui--text-center">
+              <button type="submit" class=" mui-btn mui-btn--raised mui-btn--accent"> Formulario Carga Productos</button>
+           </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+
+    
